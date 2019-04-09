@@ -1,0 +1,22 @@
+.col-md-2{
+  background-color: black;
+  height: 80vh;
+}
+a, h1 {
+  color: white;
+}
+.col-md-10{
+  background-color: #3f262f;
+}
+.container-album{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.album{
+  width:14.66%;
+}
+.album img{
+  margin-right: 1%;
+}
