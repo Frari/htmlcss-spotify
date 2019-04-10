@@ -1,3 +1,4 @@
+/* barra sinista verticale */
 .col-md-2{
   background-color: black;
   height: 85vh;
@@ -6,11 +7,17 @@
   display: flex;
   flex-direction: column;
 }
+.link-header h1{
+  display: inline-block;
+}
+.link-header a{
+  margin:0 10px;
+}
 .privacy{
   display: flex;
   justify-content: space-around;
 }
-.link-header a, .cont-button button{
+.link-header span, .cont-button button{
   margin:10px;
 }
 .cont-button button{
@@ -27,12 +34,15 @@ a:hover{
   text-decoration: none;
   color: #9a9ea5;
 }
-
+.link-header{
+  color: white;
+}
 /* blocco album musicali */
 .col-md-10{
   background-color: #3f262f;
   height: 85vh;
-  overflow: auto;
+  overflow-y:auto;
+  overflow-x: hidden;
 }
 .container-album{
   width: 100%;
@@ -46,11 +56,11 @@ a:hover{
 .tit-categoria{
   margin-left: 10px;
 }
+/* footer con icone riproduzione */
 .play{
   height: 15vh;
   background-color: black;
 }
-
 .album .img-cnt img{
   max-width: 100%;
   height: auto;
@@ -74,3 +84,53 @@ a:hover{
   align-items: center;
 }
 .icon-play a{margin-left: 30px;}
+
+@media screen and (max-width:991px) {
+  .link-header a{
+    display: none;
+  }
+  .fa-spotify{
+    font-size: 32px;
+  }
+  .link-header{
+    align-items: center;
+  }
+  .cont-button button{
+    width: 50%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .cont-button{
+    display: flex;
+    align-items: center;
+    margin-top: 160px;
+  }
+  .privacy{
+    display: none;
+  }
+  .nav-album a{
+    margin: 0 10px;
+    font-size: 8px;
+  }
+  .tit-categoria h1{
+    font-size: 28px;
+    /* padding-left: 15px; */
+  }
+  .container-album{
+    /* padding-left: 30px; */
+  }
+}
+@media(min-width:768px) and (max-width:991px){
+  .nav-album a{
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  .cont-button button{
+    width: 90%;
+    font-size: 14px;
+  }
+  .link-header{
+    font-size: 24px;
+  }
+}
