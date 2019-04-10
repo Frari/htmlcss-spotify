@@ -1,22 +1,55 @@
 .col-md-2{
   background-color: black;
-  height: 80vh;
+  height: 85vh;
 }
 a, h1 {
   color: white;
 }
 .col-md-10{
   background-color: #3f262f;
+  height: 85vh;
+  overflow: auto;
 }
+
 .container-album{
   width: 100%;
   display:flex;
   align-items: center;
   flex-wrap: wrap;
+
+
 }
-.album{
-  width:14.66%;
+.album h4{
+  text-align: center;
 }
-.album img{
-  margin-right: 1%;
+.tit-categoria{
+  margin-left: 10px;
 }
+.play{
+  height: 15vh;
+  background-color: black;
+}
+
+.album .img-cnt img{
+  max-width: 100%;
+  height: auto;
+}
+.album {
+  margin:10px;
+}
+/* nav-bar sopra album */
+.nav-album{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-album a{
+  margin: 0 30px;
+}
+.play{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-play a{margin-left: 30px;}
