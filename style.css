@@ -2,22 +2,43 @@
   background-color: black;
   height: 85vh;
 }
+.link-header, .cont-button{
+  display: flex;
+  flex-direction: column;
+}
+.privacy{
+  display: flex;
+  justify-content: space-around;
+}
+.link-header a, .cont-button button{
+  margin:10px;
+}
+.cont-button button{
+  border-radius:20px;
+}
+#black-button{
+  background-color: black;
+  color: #ccc;
+}
 a, h1 {
   color: white;
 }
+a:hover{
+  text-decoration: none;
+  color: #9a9ea5;
+}
+
+/* blocco album musicali */
 .col-md-10{
   background-color: #3f262f;
   height: 85vh;
   overflow: auto;
 }
-
 .container-album{
   width: 100%;
   display:flex;
   align-items: center;
   flex-wrap: wrap;
-
-
 }
 .album h4{
   text-align: center;
